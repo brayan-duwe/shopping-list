@@ -7,11 +7,9 @@ class ShoppingListApp:
         self.root = root
         self.root.title("Lista de Compras")
 
-        # Configurações de cores
         self.escuro_bg = "#2e2e2e"
         self.escuro_fg = "#ffffff"
 
-        # Configurar a interface para o modo escuro
         self.root.config(bg=self.escuro_bg)
 
         self.listbox = tk.Listbox(root, selectmode=tk.SINGLE, width=300, bg=self.escuro_bg, fg=self.escuro_fg)
@@ -23,7 +21,6 @@ class ShoppingListApp:
         button_frame = tk.Frame(root, bg=self.escuro_bg)
         button_frame.pack(pady=10)
 
-        # Criando botões
         self.add_button = tk.Button(button_frame, text="Adicionar", command=self.adicionar_item, width=20, bg=self.escuro_bg, fg=self.escuro_fg)
         self.add_button.pack(side=tk.LEFT, padx=2)
 
